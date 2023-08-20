@@ -1,0 +1,319 @@
+/* nav bar is start now  */
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: black;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100vw;
+}
+
+.logo a {
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+
+/* nav bar is closed  */
+/* hero section is start now  */
+/* styles.css */
+
+
+.hero {
+    background: url('white\ 1\ \(1\).jpg') center/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+
+/* hero section is closed now  */
+
+/* about us page is start now  */
+/* styles.css */
+
+/* styles.css */
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    
+
+}
+
+.content {
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .content {
+        margin-right: 50px;
+    }
+}
+
+/* aout us page is closed now  */
+
+/* about my skill section is start now  */
+/* styles.css */
+
+
+.skills {
+    padding: 50px 0;
+    width: 100vw;
+    text-align: center;
+}
+
+.skills-content {
+    max-width: 600px;
+    
+}
+
+h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#skill-img{
+    height: 100vh;
+    width: 90vw;
+  
+}
+
+.skill {
+    width: 90vw;
+    margin-bottom: 20px;
+}
+#skill-p{
+    width: 45vw;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 25vw;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.progress {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left:5%;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #333;
+    width: 0;
+
+}
+
+@media screen and (max-width: 768px) {
+    .skills-content {
+        padding: 0 20px;
+    }
+}
+
+
+
+/* about my skill is closed now  */
+/* web site service is start now  */
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Basic styling for header, services, and footer */
+  .header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .service {
+    background-color: #f7f7f7;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+
+  
+  /* Responsive design */
+  @media screen and (min-width: 768px) {
+    .services {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+  
+
+/* web site services is closed  */
+
+/* footer is start now  */
+/* Reset some default styles */
+
+  /* Styling for the contact footer */
+  .contact-footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: white;
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 768px) {
+    .contact-footer {
+      padding: 2rem 1rem;
+    }
+  }
+  
+
+/* footer is closed now  */
